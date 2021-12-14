@@ -11,6 +11,7 @@ import userReducer from "./reducers";
 const rootReducer = combineReducers({ userReducer });
 
 // create store using rootReducer and thunk as middleware
+
 export const Store = createStore(rootReducer, applyMiddleware(thunk));
 
 

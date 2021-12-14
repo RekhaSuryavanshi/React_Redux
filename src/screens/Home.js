@@ -24,9 +24,13 @@ const Home = ({ navigation }) => {
     //that allow your React components to interact with the Redux store.
 
     //useSelector reads a value from the store state and subscribes to updates, 
+
     const { name, age } = useSelector(state => state.userReducer);
+
     //useDispatch returns the store's dispatch method to let you dispatch actions.
     const dispatch = useDispatch();
+
+    //*******SQLite*********************
     // const [name, setName] = React.useState('');
     // const [age, setAge] = React.useState('');
 
